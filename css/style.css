@@ -581,3 +581,12 @@ p {
     transform: scale3d(1.20, 1.20, 1.20);
   }
 }
+
+
+
+@media only screen
+and (max-device-width : 1024px) {
+  header .background::after {
+    background-position-x: 87%;
+  }
+}
