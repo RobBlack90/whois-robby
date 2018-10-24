@@ -7,7 +7,6 @@ html, body {
   height: 100%;
   font-size: calc(18px + .3vw);
   color: #efefef;
-  /* animation: fadeIn 1s; */
 }
 a, em, h1, h4, img, li, p, strong, ul {
   margin: 0;
@@ -28,7 +27,7 @@ section {
 }
 
 header {
-  height: 95vh;
+  height: 95%;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -42,13 +41,11 @@ header .background {
   position: absolute;
   z-index: -3;
   background-color: #000017;
-  animation: fadeIn 2s;
-
 }
-header .background:after {
+header .background::after {
   content: '';
   opacity: .5;
-  background: url(../images/meIRL.jpg);
+  background: url(../images/MeIRL.jpg);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -56,6 +53,7 @@ header .background:after {
   left: 0;
   width: 100%;
   height: 100%;
+  animation: fadeIn50 2s ease;
   /* background-position-x: 87%; TODO: Add in media query */
 }
 
@@ -181,7 +179,7 @@ header h1 {
 }
 
 .skills .top hr {
-  width: 15%;
+  width: 80%;
   height: 5px;
   background-color: #ea626b;
   border: none;
@@ -315,7 +313,7 @@ header h1 {
 }
 
 .technology .tech-wrapper .list-container li hr {
-  width: 3rem;
+  width: 20%;
   height: 4px;
   /* background-color: #ea626b; */
   border: none;
@@ -330,7 +328,7 @@ header h1 {
 
 .experience {
   height: auto;
-  background-color: #517FA5;
+  background-color: #043258;
   color: #ffffff;
   flex-direction: column;
   align-items: center;
@@ -356,6 +354,7 @@ header h1 {
   background-color: #ea626b;
   border: none;
   opacity: .8;
+  width: 80%;
 }
 
 .experience .header-wrapper .text-container {
@@ -421,6 +420,7 @@ header h1 {
 
 .contact .list-container li a:hover i {
   color: #1E4C72;
+  transition: .5s;
 }
 
 
@@ -517,15 +517,67 @@ p {
   flex-direction: row-reverse;
 }
 
-.pop {
-  animation: pop 0.6s ease-out .5s;
+/* /--------Animations----------/ */
+
+.fadeIn70 {
+  -webkit-animation-name: fadeIn70;
+  animation-name: fadeIn70;
 }
 
-@keyframes pop {
-  50%  {transform: scale(1.2);}
+.widen80 {
+  -webkit-animation-name: widen80;
+  animation-name: widen80;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.widen20 {
+  -webkit-animation-name: widen20;
+  animation-name: widen20;
+}
+
+.pulse120 {
+  -webkit-animation-name: pulse120;
+  animation-name: pulse120;
+}
+
+@keyframes fadeIn50 {
+  0% { opacity: 0; }
+  100%   { opacity: .5; }
+}
+
+
+@keyframes fadeIn50 {
+  0% { opacity: 0; }
+  100%   { opacity: .5; }
+}
+
+@keyframes fadeIn70 {
+  0% { opacity: 0; }
+  100%   { opacity: .7; }
+}
+
+@keyframes widen80 {
+  0% { width: 0; }
+  100%   { width: 80%; }
+}
+
+@keyframes widen20 {
+  0% { width: 0; }
+  100%   { width: 20%; }
+}
+
+@keyframes pulse120 {
+  from {
+    -webkit-transform: scale3d(1.20, 1.20, 1.20);
+    transform: scale3d(1.20, 1.20, 1.20);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    -webkit-transform: scale3d(1.20, 1.20, 1.20);
+    transform: scale3d(1.20, 1.20, 1.20);
+  }
 }
