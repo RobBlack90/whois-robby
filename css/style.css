@@ -316,12 +316,12 @@ header h1 {
 }
 
 .technology .tech-wrapper .list-container li  i {
-  font-size: 10vw;
+  font-size: calc(24px + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  img {
-  width: 10vw;
-  height: 10vw;
+  width: calc(24px + 10vw);
+  height: calc(24px + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  p {
@@ -442,7 +442,7 @@ header h1 {
 
 
 .contact .list-container li i {
-  font-size: 10vw;
+  font-size: calc(24px + 10vw);
 }
 
 
@@ -603,7 +603,27 @@ p {
 
 @media only screen
 and (max-device-width : 1024px) {
+  html, body {
+    font-size: calc(23px + .3vw);
+  }
+
   header .background::after {
     background-position-x: 87%;
+  }
+
+  .skills .top {
+    padding-bottom: 0;
+  }
+
+  .skills .icon-wrapper {
+    padding: 2rem 0;
+  }
+
+  .skills .bottom .text-wrapper {
+    padding-top: 0;
+  }
+
+  .skills .bottom .text-wrapper .text-container {
+    flex-direction: column;
   }
 }
