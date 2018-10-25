@@ -316,12 +316,12 @@ header h1 {
 }
 
 .technology .tech-wrapper .list-container li  i {
-  font-size: calc(24px + 10vw);
+  font-size: calc(1rem + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  img {
-  width: calc(24px + 10vw);
-  height: calc(24px + 10vw);
+  width: calc(1rem + 10vw);
+  height: calc(1rem + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  p {
@@ -437,7 +437,7 @@ header h1 {
 
 
 .contact .list-container li i {
-  font-size: calc(24px + 10vw);
+  font-size: calc(1.5rem + 10vw);
 }
 
 
@@ -456,6 +456,7 @@ h3 {
 
 p {
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .background {
@@ -595,13 +596,25 @@ p {
 }
 
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  html, body {
+    font-size: calc(8px + .3vw);
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  html, body {
+    font-size: calc(16px + .3vw);
+  }
+}
+
 
 @media only screen
 and (max-device-width : 1024px) {
-  html, body {
-    font-size: calc(23px + .3vw);
-  }
-
   header .background::after {
     background-position-x: 87%;
   }
