@@ -86,7 +86,7 @@ header p {
 }
 
 header h1 {
-   font-size: 2.4rem;
+   font-size: 2.4em;
    margin: .5rem 0;
    font-weight: bold;
    white-space: nowrap;
@@ -175,7 +175,7 @@ header h1 {
 
 .skills .top {
   width: 85%;
-  padding: 3rem 0;
+  padding: 3em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +184,7 @@ header h1 {
 
 .skills .top hr {
   width: 80%;
-  height: .2rem;
+  height: .2em;
   background-color: #ea626b;
   border: none;
 }
@@ -206,7 +206,7 @@ header h1 {
 }
 
 .skills .bottom .text-wrapper {
-  padding: 2rem 0;
+  padding: 2em 0;
 }
 
 .skills .bottom .text-wrapper .text-container {
@@ -217,7 +217,7 @@ header h1 {
 
 .skills .bottom .text-wrapper .text-container i {
   padding: 1.5rem;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   margin: 0 1.2rem;
   background-color: #37658B;
   border-radius: 50%;
@@ -247,13 +247,13 @@ header h1 {
   flex-direction: column;
   align-items: center;
   height: auto;
-  padding-bottom: 6rem;
+  padding-bottom: 6em;
   }
 
 .technology .header-wrapper {
   height: 30%;
   width: 80%;
-  padding: 3rem 0;
+  padding: 3em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,7 +261,7 @@ header h1 {
 }
 
 .technology .header-wrapper .text-container {
- padding-top: 1.5rem;
+ padding-top: 1.5em;
 }
 
 .technology .header-wrapper .text-container p{
@@ -271,7 +271,7 @@ header h1 {
 .technology .text-wrapper {
   height: 15%;
   width: 85%;
-  padding: 1rem 0;
+  padding: 1em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -281,7 +281,7 @@ header h1 {
 .technology .tech-wrapper {
   height: 100%;
   width: 80%;
-  padding-top: 1rem;
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,12 +290,12 @@ header h1 {
 
 .technology .tech-wrapper .list-container {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .technology .tech-wrapper .list-container .list-description {
   padding-bottom: 1rem;
-  font-size: .8rem;
+  font-size: .8em;
   font-style: italic;
   text-align: center;
   line-height: inherit;
@@ -312,25 +312,26 @@ header h1 {
 .technology .tech-wrapper .list-container li {
   flex: 1;
   text-align: center;
+  padding: .8em;
 }
 
 .technology .tech-wrapper .list-container li  i {
-  font-size: calc(1rem + 10vw);
+  font-size: calc(1em + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  img {
-  width: calc(1rem + 10vw);
-  height: calc(1rem + 10vw);
+  width: calc(1em + 10vw);
+  height: calc(1em + 10vw);
 }
 
 .technology .tech-wrapper .list-container li  p {
   color: #707070;
-  padding-top: .3rem;
+  padding-top: .3em;
 }
 
 .technology .tech-wrapper .list-container li hr {
   width: 20%;
-  height: .2rem;
+  height: .2em;
   border: none;
   opacity: .3;
 }
@@ -352,7 +353,7 @@ header h1 {
 .experience .header-wrapper {
   height: auto;
   width: auto;
-  padding: 3rem 0;
+  padding: 3em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,11 +362,11 @@ header h1 {
 }
 
 .experience .header-wrapper .header-container {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
   }
 
 .experience .header-wrapper .header-container hr {
-  height: .2rem;
+  height: .2em;
   background-color: #ea626b;
   border: none;
   width: 80%;
@@ -383,13 +384,13 @@ header h1 {
   color: #333333;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3em 0;
 }
 
 .contact .header-container {
   height: 30%;
   width: 80%;
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -398,13 +399,13 @@ header h1 {
 
 .contact .header-container hr {
   width: 80%;
-  height: .2rem;
+  height: .2em;
   background-color: #ea626b;
   border: none;
 }
 
 .contact .header-container .text-wrapper {
-    padding: 1rem 0;
+    padding: 1em 0;
     text-align: center;
 }
 
@@ -433,7 +434,7 @@ header h1 {
 
 
 .contact .list-container li i {
-  font-size: calc(1.5rem + 10vw);
+  font-size: calc(1.5em + 10vw);
 }
 
 
@@ -442,16 +443,16 @@ header h1 {
 
 h2 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 h3 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 1.5em;
   text-align: center;
 }
 
@@ -615,6 +616,10 @@ and (max-device-width : 1024px) {
     background-position-x: 87%;
   }
 
+  .skills {
+    font-size: 1.5rem;
+  }
+
   .skills .top {
     padding-bottom: 0;
   }
@@ -624,10 +629,68 @@ and (max-device-width : 1024px) {
   }
 
   .skills .bottom .text-wrapper {
-    padding-top: 0;
+    padding: 2em 0;
+  }
+
+  .skills .bottom {
+    width: 95%;
+  }
+
+  .skills .bottom .text-wrapper .text-container i {
+    margin: 1.2rem;
   }
 
   .skills .bottom .text-wrapper .text-container {
     flex-direction: column;
+  }
+
+  .technology {
+    font-size: 1.5rem;
+  }
+
+  .technology .header-wrapper {
+    width: 95%;
+    padding-top: 3em;
+  }
+
+  .technology .tech-wrapper {
+    width: 95%;
+  }
+
+  .technology .tech-wrapper .list-container {
+    width: 95%;
+  }
+
+  .technology .tech-wrapper .list-container ul {
+    flex-flow: row wrap;
+  }
+
+  .technology .tech-wrapper .list-container li  i {
+    font-size: calc(4em + 10vw);
+  }
+
+  .technology .tech-wrapper .list-container li  img {
+    width: calc(4em + 10vw);
+    height: calc(4em + 10vw);
+  }
+
+  .experience {
+    font-size: 1.5rem;
+  }
+
+  .experience h3 {
+    font-size: 2.3em;
+  }
+
+  .experience .header-wrapper {
+    width: 95%;
+  }
+
+  .contact {
+    font-size: 1.5rem;
+  }
+
+  .contact .header-container {
+    width: 90%;
   }
 }
