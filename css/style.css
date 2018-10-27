@@ -74,11 +74,10 @@ header .hello-container {
 
 header .hello-wrapper {
   padding: 1rem;
-  border-radius: 5px;
 }
 header .text-container {
   text-align: center;
-  border: 5px solid;
+  border: .3rem solid;
   padding: 1rem 2.5rem;
 }
 
@@ -185,7 +184,7 @@ header h1 {
 
 .skills .top hr {
   width: 80%;
-  height: 5px;
+  height: .2rem;
   background-color: #ea626b;
   border: none;
 }
@@ -331,8 +330,7 @@ header h1 {
 
 .technology .tech-wrapper .list-container li hr {
   width: 20%;
-  height: 4px;
-  /* background-color: #ea626b; */
+  height: .2rem;
   border: none;
   opacity: .3;
 }
@@ -367,10 +365,9 @@ header h1 {
   }
 
 .experience .header-wrapper .header-container hr {
-  height: 5px;
+  height: .2rem;
   background-color: #ea626b;
   border: none;
-  opacity: .8;
   width: 80%;
 }
 
@@ -401,10 +398,9 @@ header h1 {
 
 .contact .header-container hr {
   width: 80%;
-  height: 5px;
+  height: .2rem;
   background-color: #ea626b;
   border: none;
-  opacity: .8;
 }
 
 .contact .header-container .text-wrapper {
