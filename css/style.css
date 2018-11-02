@@ -260,6 +260,13 @@ header h1 {
   align-items: center;
 }
 
+.technology .header-wrapper hr {
+  width: 80%;
+  height: .2em;
+  background-color: #ea626b;
+  border: none;
+}
+
 .technology .header-wrapper .text-container {
  padding-top: 1.5em;
 }
@@ -389,7 +396,7 @@ header h1 {
 
 .contact .header-container {
   height: 30%;
-  width: 80%;
+  width: 60%;
   padding-bottom: 3em;
   display: flex;
   flex-direction: column;
