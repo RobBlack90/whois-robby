@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+  <body>
+
+    <section class="hero is-fullheight has-bg-img">
+      <div class="hero-body centered">
+          <figure>
+              <img class="logo" src="images/RobbyLogo2.png" alt="Me" alt="">
+              <h1>Software Developer<br>Extraordinaire!</h1>
+          </figure>
+      </div>
+    </section>
+    <section class="section is-medium about">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <img class="logo" src="images/thumbsup.png" alt="Me" alt="">
+            </div>
+            <div class="column">
+              <h2 class="title">ROBBY'S THAT <span class="inverse">NEW DEV</span> YOU'RE LOOKING FOR!</h2>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <h3 class="subtitle has-text-centered">
+                  He has a BS in Computer Science from Southern Illinois University Edwardsville, and has 
+                  been a developer professionally for over <span id="years"></span> years!
+                <!-- <i class="fas fa-star"></i> -->
+              </h3>
+              <p>
+                Keytar palo santo cray viral before they sold out seitan marfa master cleanse. 
+                Wayfarers umami gentrify neutra, street art etsy crucifix. Vegan DIY tbh, pork belly austin skateboard ugh 
+                blog polaroid. Hashtag tbh blog marfa blue bottle lo-fi live-edge intelligentsia, iceland PBR&B. 
+                Vaporware enamel pin cronut keytar twee freegan vexillologist typewriter deep v farm-to-table hammock franzen. 
+                Chillwave slow-carb stumptown flannel forage squid organic vegan. Blue bottle plaid brooklyn, VHS venmo heirloom unicorn.
+              </p>
+            </div>
+          </div>
+          <h4 class="title technology has-text-centered">Technology</h4>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+                <p><i class="fas fa-star"></i> ONE <i class="fas fa-star"></i></p>
+            </div>
+            <div class="column has-text-centered">
+                <p><i class="fas fa-star"></i> TWO <i class="fas fa-star"></i></p>
+            </div>
+            <div class="column has-text-centered">
+                <p><i class="fas fa-star"></i> THREE <i class="fas fa-star"></i></p>
+            </div>
+            <div class="column has-text-centered">
+                <p><i class="fas fa-star"></i> FOUR <i class="fas fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section technology">
+          <div class="container">
+            <h3>Technology</h3>
+            <div class="columns is-centered">
+              <div class="column">
+                <ul>
+                  <li>
+                    <p>WORD</p>
+                  </li>
+                  <li>
+                    <p>WORD</p>
+                  </li>
+                  <li>
+                    <p>WORD</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </section> -->
+      <section class="section contact">
+          <div class="container">
+            <h2 class="subtitle has-text-centered">GIVE HIM A BUZZ!</h2>
+              <div class="columns">
+                <div class="column has-text-centered">
+                    LINKEDIN
+                </div>
+                <div class="column has-text-centered">
+                    GITHUB
+                </div>
+                <div class="column has-text-centered">
+                    EMAIL
+                </div>
+                <div class="column has-text-centered">
+                    INSTAGRAM
+                </div>
+              </div>
+            </div>
+      </section>
+
+  <script>
+      window.onload = function (){
+        var ageDifference = Date.now() - new Date('2012-06-04T09:00:00');
+        var differenceDate = new Date(ageDifference);
+        var years = Math.abs(differenceDate.getUTCFullYear() - 1970);
+        document.getElementById('years').innerHTML = years;
+      };
+    </script>
+  </body>
+</html>
