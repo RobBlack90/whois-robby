@@ -38,8 +38,8 @@
                   developer experience, Robby is ready to tackle any problem in front of him! This egghead
                   is well versed in the entire spectrum of web development- from CSS to SQL. Currently, 
                   his day-to-day duties have him building web apps mainly using Vue.js and Node.js (Hapi). 
-                  When not coding, you can find this Renaissance man around South City St. Louis sipping on
-                  a coffee, strumming his guitar, or preaching the gospel of <a href="http://urbanchestnut.com/" target="_blank">Urban Chestnut.</a>
+                  When not coding, you can find this Renaissance man around South City St. Louis strumming his guitar,
+                  cursing at his <span id="age"></span> year old house, or preaching the gospel of <a href="http://urbanchestnut.com/" target="_blank">Urban Chestnut.</a>
               </p>
             </div>
           </div>
@@ -112,6 +112,12 @@
         var differenceDate = new Date(ageDifference);
         var years = Math.abs(differenceDate.getUTCFullYear() - 1970);
         document.getElementById('years').innerHTML = years;
+      };
+      window.onload = function (){
+        var ageDifference = Date.now() - new Date('1908-01-01T09:00:00');
+        var differenceDate = new Date(ageDifference);
+        var years = Math.abs(differenceDate.getUTCFullYear() - 1970);
+        document.getElementById('age').innerHTML = years;
       };
     </script>
   </body>
