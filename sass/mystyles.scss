@@ -12,13 +12,9 @@ $red: #ee5d42;
 $green: #7AF0D5;
 $black: #363636;
 $white : #e3e3e3;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-// $grey-dark: $beige-light;
-// $grey-light: $beige-lighter;
 $primary: $yellow;
 $link: $red;
 $widescreen-enabled: true;
@@ -62,13 +58,6 @@ $fa-font-path: "../webfonts";
   display: flex;
   align-items: center;
 }
-
-// h2 {
-//   font-size: 3rem;
-//   color: $red;
-//   font-family: 'Fugaz One', cursive;
-//   font-style: italic;
-// }
 
 .hero.is-fullheight {
   .hero-body {
@@ -121,7 +110,7 @@ $fa-font-path: "../webfonts";
     font-size: 3rem;
     color: $red;
     font-family: 'Fugaz One', cursive;
-    // font-style: italic;
+    font-style: italic;
     @include touch {
       text-align: center;
       font-size: 2rem; 
@@ -131,7 +120,9 @@ $fa-font-path: "../webfonts";
   .subtitle {
     font-style: italic;
   }
+}
 
+.technology {
   h4 {
     font-size: 3.75rem;
     color: #363636;
@@ -142,28 +133,24 @@ $fa-font-path: "../webfonts";
       font-size: 2.75rem;
     }
   }
+  .technology-list {
+    .technology-item {
+      min-width: 300px;
 
-  // .technology {
-    // border: 1px red solid;
-    .technology-list {
-      .technology-item {
-        min-width: 300px;
+      &.and-more {
+        font-style: italic;
+        font-size: 1.25rem;
+      }
 
-        &.and-more {
-          font-style: italic;
-          font-size: 1.25rem;
-        }
-
-        i {
-          color: $yellow;
-        }
-        .technology-name {
-          font-family: 'Fugaz One', cursive;
-          color: $black;
-        }
+      i {
+        color: $yellow;
+      }
+      .technology-name {
+        font-family: 'Fugaz One', cursive;
+        color: $black;
       }
     }
-  // }
+  }
 }
 
 .contact {

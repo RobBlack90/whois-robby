@@ -9068,7 +9068,8 @@ label.panel-block {
 .about h2 {
   font-size: 3rem;
   color: #ee5d42;
-  font-family: 'Fugaz One', cursive; }
+  font-family: 'Fugaz One', cursive;
+  font-style: italic; }
   @media screen and (max-width: 1023px) {
     .about h2 {
       text-align: center;
@@ -9077,24 +9078,24 @@ label.panel-block {
 .about .subtitle {
   font-style: italic; }
 
-.about h4 {
+.technology h4 {
   font-size: 3.75rem;
   color: #363636;
   font-family: 'Yesteryear', cursive;
   transform: rotate(-7deg);
   font-weight: 400; }
   @media screen and (max-width: 1023px) {
-    .about h4 {
+    .technology h4 {
       font-size: 2.75rem; } }
 
-.about .technology-list .technology-item {
+.technology .technology-list .technology-item {
   min-width: 300px; }
-  .about .technology-list .technology-item.and-more {
+  .technology .technology-list .technology-item.and-more {
     font-style: italic;
     font-size: 1.25rem; }
-  .about .technology-list .technology-item i {
+  .technology .technology-list .technology-item i {
     color: #e3b519; }
-  .about .technology-list .technology-item .technology-name {
+  .technology .technology-list .technology-item .technology-name {
     font-family: 'Fugaz One', cursive;
     color: #363636; }
 
