@@ -7,7 +7,7 @@ My personal site! Jam packed with info, tidbits, and particulars- about me! All 
 ...That's not true. There was no blood. ...And hardly any tears.
 
 
-# Visit it 👇
+# Check it out! 👇
 It's hosted on the free github pages thing because I'm cheap. Hooray fiscal responsibility! 
 
 https://robblack90.github.io/whois-robby/
