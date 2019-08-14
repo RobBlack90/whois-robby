@@ -4,4 +4,10 @@ My personal site! Jam packed with info, tidbits, and particulars- about me! All 
 # Stack Used
 [Bulma](https://docs.mongodb.com/manual/installation/) framework for a lot of scaffolding. Also a whole lotta blood, sweat, and tears. 
 
-...That's not true. There was no blood. And hardly any tears...
+...That's not true. There was no blood. ...And hardly any tears.
+
+
+# Visit it 👇
+It's hosted on the free github pages thing because I'm cheap. Hooray fiscal responsibility! 
+
+https://robblack90.github.io/whois-robby/
