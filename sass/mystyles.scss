@@ -106,6 +106,19 @@ html {
 
 .about {
 
+  .container {
+    
+    .columns {
+      
+      &.header-image {
+        @include touch {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+    }
+  }
+
+  }
   img {
     width: 15rem;
   }
