@@ -107,13 +107,11 @@ html {
 .about {
 
   .container {
-    
     .columns {
-      
       &.header-image {
         @include touch {
           display: flex;
-          flex-direction: row-reverse;
+          flex-direction: column-reverse;
         }
     }
   }
