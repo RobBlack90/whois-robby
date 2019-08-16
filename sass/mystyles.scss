@@ -109,10 +109,10 @@ html {
   .container {
     .columns {
       &.header-image {
-        @include touch {
-          display: flex;
-          flex-direction: column-reverse;
-        }
+        // @include touch {
+        //   display: flex;
+        //   flex-direction: column-reverse;
+        // }
     }
   }
 
