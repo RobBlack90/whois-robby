@@ -9011,6 +9011,9 @@ label.panel-block {
 
 html {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cccccc' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"); }
+  @media screen and (max-width: 1023px) {
+    html {
+      font-size: 18px; } }
 
 .has-bg-img:before {
   content: "";
@@ -9028,10 +9031,6 @@ html {
     .has-bg-img:before {
       background-position: right; } }
 
-.is-vertical-center {
-  display: flex;
-  align-items: center; }
-
 .hero.is-fullheight .hero-body.centered {
   align-items: center;
   justify-content: center; }
@@ -9047,9 +9046,6 @@ html {
 .hero.is-fullheight .hero-body .logo {
   filter: drop-shadow(5px 5px 5px #222);
   width: 15rem; }
-  @media screen and (max-width: 768px) {
-    .hero.is-fullheight .hero-body .logo {
-      width: 8rem; } }
 
 .hero.is-fullheight .hero-body h1 {
   font-family: 'Yesteryear', cursive;
@@ -9061,9 +9057,6 @@ html {
   filter: drop-shadow(5px 5px 5px #222);
   transform: rotate(-7deg);
   text-shadow: 2px 0 0 #363636, -2px 0 0 #363636, 0 2px 0 #363636, 0 -2px 0 #363636, 1px 1px #363636, -1px -1px 0 #363636, 1px -1px 0 #363636, -1px 1px 0 #363636; }
-  @media screen and (max-width: 768px) {
-    .hero.is-fullheight .hero-body h1 {
-      font-size: 1.5rem; } }
 
 .about {
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
@@ -9088,9 +9081,6 @@ html {
   font-family: 'Yesteryear', cursive;
   transform: rotate(-7deg);
   font-weight: 400; }
-  @media screen and (max-width: 1023px) {
-    .technology h4 {
-      font-size: 2.75rem; } }
 
 .technology .technology-list .technology-item {
   min-width: 300px; }
@@ -9107,9 +9097,6 @@ html {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23464646' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-color: #363636; }
-  @media screen and (max-width: 768px) {
-    .contact h2 {
-      font-size: 2rem; } }
   .contact h2 {
     font-size: 3rem;
     color: #e3e3e3;
