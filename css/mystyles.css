@@ -9050,7 +9050,7 @@ html {
 .hero.is-fullheight .hero-body h1 {
   font-family: 'Yesteryear', cursive;
   line-height: 1;
-  color: white;
+  color: #e3e3e3;
   font-size: 2.5rem;
   text-align: center;
   padding: .5rem;
@@ -9061,18 +9061,29 @@ html {
 .about {
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
-  .about img {
+  .about .container img {
     width: 15rem; }
-  .about h2 {
+  .about .container a {
+    color: #4a4a4a;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #e3b519 50%, #e3b519 50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200% .5rem;
+    transition: all .2s ease-in-out; }
+    .about .container a:hover {
+      background-size: 80% .5rem; }
+  .about .container h2 {
     font-size: 3rem;
     color: #ee5d42;
     font-family: 'Fugaz One', cursive;
     font-style: italic; }
     @media screen and (max-width: 1023px) {
-      .about h2 {
+      .about .container h2 {
         text-align: center;
         font-size: 2rem; } }
-  .about .subtitle {
+  .about .container .subtitle {
     font-style: italic; }
 
 .technology h4 {
@@ -9105,13 +9116,25 @@ html {
     @media screen and (max-width: 768px) {
       .contact h2 {
         font-size: 2rem; } }
-  .contact .column i {
-    color: white;
-    background-color: #ee5d42;
-    padding: .3rem;
+  .contact .column a {
+    color: #e3e3e3;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 0;
     font-size: 2.5rem;
-    cursor: pointer;
     transition: all .2s ease-in-out; }
-    .contact .column i:hover {
-      transform: rotate(-7deg);
-      cursor: pointer; }
+    .contact .column a:after {
+      display: block;
+      color: #e3e3e3;
+      content: '';
+      background: #ee5d42;
+      position: absolute;
+      width: 2.4rem;
+      height: 2.75rem;
+      bottom: 13px;
+      z-index: -1;
+      transition: all 0.2s;
+      transform: rotate(5deg); }
+    .contact .column a:hover:after {
+      transform: rotate(-5deg); }

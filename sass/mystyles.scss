@@ -41,7 +41,6 @@ html {
   }
 }
 
-
 .has-bg-img {
   &:before {
     content: "";
@@ -85,7 +84,7 @@ html {
     h1 {
       font-family: 'Yesteryear', cursive;
       line-height: 1;
-      color: white;
+      color: $white;
       font-size: 2.5rem;
       text-align: center;
       padding: .5rem;
@@ -101,32 +100,39 @@ html {
   border-top: 1px solid rgba(255,255,255,.2);
 
   .container {
-    .columns {
-      &.header-image {
-        // @include touch {
-        //   display: flex;
-        //   flex-direction: column-reverse;
-        // }
-    }
-  }
 
-  }
-  img {
-    width: 15rem;
-  }
-  h2 {
-    font-size: 3rem;
-    color: $red;
-    font-family: 'Fugaz One', cursive;
-    font-style: italic;
-    @include touch {
-      text-align: center;
-      font-size: 2rem; 
+    img {
+      width: 15rem;
     }
-  }
 
-  .subtitle {
-    font-style: italic;
+    a {
+      color: #4a4a4a;
+      cursor: pointer;
+      text-decoration: none;
+      background-image: linear-gradient(to right, #e3b519 50%, #e3b519 50%);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 200% .5rem;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background-size: 80% .5rem;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: $red;
+      font-family: 'Fugaz One', cursive;
+      font-style: italic;
+      @include touch {
+        text-align: center;
+        font-size: 2rem; 
+      }
+    }
+
+    .subtitle {
+      font-style: italic;
+    }
   }
 }
 
@@ -174,17 +180,32 @@ html {
   }
 
   .column {
-    i {
-      color: white;
-      background-color: #ee5d42;
-      padding: .3rem;
-      font-size: 2.5rem;
-      cursor: pointer;
 
+    a {
+      color: $white;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      z-index: 0;
+      font-size: 2.5rem;
       transition: all .2s ease-in-out;
+      &:after {
+        display: block;
+        color: $white;
+        content: '';
+        background: $red;
+        position: absolute;
+        width: 2.4rem;
+        height: 2.75rem;
+        bottom: 13px;
+        z-index: -1;
+        transition: all 0.2s;
+        transform: rotate(5deg);
+      }
       &:hover {
-        transform: rotate(-7deg);
-        cursor: pointer;
+        &:after{
+          transform: rotate(-5deg);
+        }
       }
     }
   }

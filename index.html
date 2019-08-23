@@ -12,10 +12,12 @@
 
     <section class="hero is-fullheight has-bg-img">
       <div class="hero-body centered">
+        <div class="container">
           <figure>
               <img class="logo" src="images/RobbyLogo2.png" alt="Me" alt="">
               <h1>Software Developer<br>Extraordinaire!</h1>
           </figure>
+        </div>
       </div>
     </section>
     <section class="section about">
@@ -40,7 +42,7 @@
                   his day-to-day duties have him building web apps mainly using Vue.js and Node.js (Hapi). 
                   When not coding, you can find this Renaissance man around South City St. Louis 
                   <a href="https://twitter.com/tgeast" title="I do the tweetin' 'round here!" target="_blank">tweeting</a> the word out about his neighborhood,
-                  strumming his guitar, or preaching the gospel of <a href="http://urbanchestnut.com/" target="_blank">Urban Chestnut.</a>
+                  strumming his guitar, or preaching the gospel of <a class="link-tag" href="http://urbanchestnut.com/" target="_blank">Urban Chestnut.</a>
               </p>
             </div>
           </div>
@@ -112,7 +114,7 @@
             </div>
           </footer>
   <script>
-      window.onload = function (){
+      window.onload = function() {
         var ageDifference = Date.now() - new Date('2012-06-04T09:00:00');
         var differenceDate = new Date(ageDifference);
         var years = Math.abs(differenceDate.getUTCFullYear() - 1970);
