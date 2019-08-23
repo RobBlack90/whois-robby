@@ -120,6 +120,11 @@
         var years = Math.abs(differenceDate.getUTCFullYear() - 1970);
         document.getElementById('years').innerHTML = years;
       };
+
+      window.onresize = function() {
+        document.body.height = window.innerHeight;
+      };
+      window.onresize();
   </script>
   </body>
 </html>
