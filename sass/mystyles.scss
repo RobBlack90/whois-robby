@@ -80,6 +80,9 @@ html {
     .logo {
       filter: drop-shadow(5px 5px 5px #222);
       width: 15rem;
+      @include touch {
+        width: 13rem;
+      }
     }
     
     h1 {
@@ -92,6 +95,9 @@ html {
       filter: drop-shadow(5px 5px 5px #222);
       transform: rotate(-7deg);
       text-shadow: 2px 0 0 $black, -2px 0 0 $black, 0 2px 0 $black, 0 -2px 0 $black, 1px 1px $black, -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black;
+      @include touch {
+        font-size: 2rem;
+      }
     }
   }
 }

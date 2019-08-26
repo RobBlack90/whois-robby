@@ -9046,6 +9046,9 @@ html {
   .hero.is-fullheight .hero-body .logo {
     filter: drop-shadow(5px 5px 5px #222);
     width: 15rem; }
+    @media screen and (max-width: 1023px) {
+      .hero.is-fullheight .hero-body .logo {
+        width: 13rem; } }
   .hero.is-fullheight .hero-body h1 {
     font-family: 'Yesteryear', cursive;
     line-height: 1;
@@ -9056,6 +9059,9 @@ html {
     filter: drop-shadow(5px 5px 5px #222);
     transform: rotate(-7deg);
     text-shadow: 2px 0 0 #363636, -2px 0 0 #363636, 0 2px 0 #363636, 0 -2px 0 #363636, 1px 1px #363636, -1px -1px 0 #363636, 1px -1px 0 #363636, -1px 1px 0 #363636; }
+    @media screen and (max-width: 1023px) {
+      .hero.is-fullheight .hero-body h1 {
+        font-size: 2rem; } }
 
 .about {
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
